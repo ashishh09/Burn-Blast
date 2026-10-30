@@ -12,24 +12,29 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onExploreClick }) => {
 
   const realPhotos = [
     {
-      url: '/src/assets/images/real/gym_real_1.jpg',
+      url: '/images/gym_hall_main.jpeg',
       label: 'Main Gym Floor',
-      sub: 'USI bag, overhead lighting & consistency pillar',
+      sub: 'USI bag, overhead lighting & focus pillars',
     },
     {
-      url: '/src/assets/images/real/gym_real_3.jpg',
+      url: '/images/gym_storefront.jpeg',
       label: 'Official Storefront',
       sub: 'Illuminated 3D signboard at Connaught Place',
     },
     {
-      url: '/src/assets/images/real/gym_real_2.jpg',
+      url: '/images/trainer_mohsin_deadlift.jpeg',
       label: 'Coach Mohsin Tamboli',
       sub: 'Deadlift platform with Elefas bumper plates',
     },
     {
-      url: '/src/assets/images/real/gym_real_4.jpg',
-      label: 'Resistance Aisle',
-      sub: 'Modern machinery line & motivation pillars',
+      url: '/images/gym_community.jpeg',
+      label: 'Community & Coaches',
+      sub: 'Members and coaching team celebration',
+    },
+    {
+      url: '/images/gym_hall_consistency.jpeg',
+      label: 'Consistency Aisle',
+      sub: 'Preacher curls, cables & resistance line',
     },
   ];
 
@@ -48,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onExploreClick }) => {
       {/* Background Image with Cinematic Scrim and Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_athlete_lifting_1793352854245.jpg"
+          src="/images/hero_athlete_lifting_1793352854245.jpg"
           alt="Athlete training with barbell at Burn and Blast Gym"
           className="w-full h-full object-cover object-center filter brightness-[0.6] contrast-110 scale-105"
           referrerPolicy="no-referrer"
@@ -201,7 +206,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onExploreClick }) => {
               </div>
 
               {/* Thumbnails Strip / Switcher */}
-              <div className="mt-3 grid grid-cols-4 gap-2">
+              <div className="mt-3 grid grid-cols-5 gap-1.5">
                 {realPhotos.map((item, idx) => (
                   <button
                     key={item.label}

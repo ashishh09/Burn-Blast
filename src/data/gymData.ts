@@ -50,10 +50,12 @@ export const BUSINESS_INFO = {
   city: 'Chhatrapati Sambhajinagar, Maharashtra',
   trainerName: 'Mohsin Tamboli',
   trainerRole: 'Head Coach & Personal Trainer',
-  trainerRealImage: '/src/assets/images/real/gym_real_2.jpg',
-  storefrontRealImage: '/src/assets/images/real/gym_real_3.jpg',
-  floorRealImage: '/src/assets/images/real/gym_real_1.jpg',
-  equipmentRealImage: '/src/assets/images/real/gym_real_4.jpg',
+  // Static paths served from public/ directory for 100% reliability on Vercel
+  trainerRealImage: '/images/trainer_mohsin_deadlift.jpeg',
+  storefrontRealImage: '/images/gym_storefront.jpeg',
+  floorRealImage: '/images/gym_hall_main.jpeg',
+  communityRealImage: '/images/gym_community.jpeg',
+  equipmentRealImage: '/images/gym_hall_consistency.jpeg',
   googleMapsDirectionsUrl: 'https://www.google.com/maps/search/?api=1&query=Burn+and+Blast+Gym+Chhatrapati+Sambhajinagar',
   googleMapsEmbedUrl: 'https://www.google.com/maps?q=Burn+and+Blast+Gym+Chhatrapati+Sambhajinagar&output=embed'
 };
@@ -65,7 +67,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Hypertrophy & Power',
     description: 'Build muscular power and functional strength utilizing high-grade Olympic barbells, heavy dumbbells, and specialized resistance machines.',
     iconName: 'Dumbbell',
-    image: '/src/assets/images/real/gym_real_2.jpg',
+    image: '/images/trainer_mohsin_deadlift.jpeg',
     features: ['Compound lifts', 'Form perfection', 'Progressive loading']
   },
   {
@@ -74,7 +76,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Endurance & Heart Health',
     description: 'Improve aerobic capacity, cardiovascular stamina, and daily energy on premium commercial treadmills and cross-trainers.',
     iconName: 'Flame',
-    image: '/src/assets/images/gym_cardio_stretch_1793352856772.jpg',
+    image: '/images/gym_cardio_stretch_1793352856772.jpg',
     features: ['Aerobic conditioning', 'Stamina building', 'Heart health monitoring']
   },
   {
@@ -83,7 +85,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'One-on-One Coaching',
     description: 'Receive dedicated 1-on-1 coaching and technique supervision from Coach Mohsin Tamboli designed around your unique body and goals.',
     iconName: 'UserCheck',
-    image: '/src/assets/images/real/gym_real_2.jpg',
+    image: '/images/trainer_mohsin_deadlift.jpeg',
     features: ['Custom routine', 'Individual attention', 'Continuous motivation']
   },
   {
@@ -92,7 +94,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Body Transformation',
     description: 'Evidence-based exercise guidance and sustainable routine adjustments to support safe weight loss or healthy muscle weight gain.',
     iconName: 'Scale',
-    image: '/src/assets/images/real/gym_real_1.jpg',
+    image: '/images/gym_hall_main.jpeg',
     features: ['Fat loss guidance', 'Lean mass gain', 'Metabolism boost']
   },
   {
@@ -101,7 +103,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Structured Routines',
     description: 'Systematic split routines balancing push, pull, legs, and core training to keep you consistent without overtraining or burnout.',
     iconName: 'CalendarCheck',
-    image: '/src/assets/images/real/gym_real_4.jpg',
+    image: '/images/gym_hall_consistency.jpeg',
     features: ['Split scheduling', 'Exercise selection', 'Rest & recovery balance']
   },
   {
@@ -110,7 +112,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Nutritional Habits',
     description: 'Practical, everyday dietary advice and protein intake recommendations to fuel tough workouts and optimize muscle recovery.',
     iconName: 'Apple',
-    image: '/src/assets/images/gym_cardio_stretch_1793352856772.jpg',
+    image: '/images/gym_cardio_stretch_1793352856772.jpg',
     features: ['Daily macro awareness', 'Hydration timing', 'Pre/post workout fuel']
   },
   {
@@ -119,7 +121,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Mobility & Recovery',
     description: 'Dedicated stretching area with mats and foam rollers to improve joint range of motion, relieve soreness, and prevent workout injuries.',
     iconName: 'Activity',
-    image: '/src/assets/images/gym_cardio_stretch_1793352856772.jpg',
+    image: '/images/gym_cardio_stretch_1793352856772.jpg',
     features: ['Dynamic warm-ups', 'Cool-down stretches', 'Injury prevention']
   },
   {
@@ -128,7 +130,7 @@ export const SERVICES_LIST: GymService[] = [
     category: 'Orientation & Support',
     description: 'Friendly onboarding for beginners and intermediate lifters to establish proper gym etiquette, posture, and long-term habits.',
     iconName: 'Compass',
-    image: '/src/assets/images/real/gym_real_1.jpg',
+    image: '/images/gym_community.jpeg',
     features: ['Beginner orientation', 'Posture checks', 'Habit building']
   }
 ];
@@ -139,7 +141,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Official Gym Storefront & 3D Signboard',
     category: 'interior',
     categoryLabel: 'Storefront',
-    imageUrl: '/src/assets/images/real/gym_real_3.jpg',
+    imageUrl: '/images/gym_storefront.jpeg',
     caption: 'Official entrance at Connaught Place: "BURN & BLAST GYM - A JOURNEY TO YOUR FIT LIFE (बर्न & ब्लास्ट जिम)".',
     isReal: true
   },
@@ -148,7 +150,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Coach Mohsin Tamboli - Deadlift Station',
     category: 'strength',
     categoryLabel: 'Trainer In Action',
-    imageUrl: '/src/assets/images/real/gym_real_2.jpg',
+    imageUrl: '/images/trainer_mohsin_deadlift.jpeg',
     caption: 'Trainer Mohsin Tamboli lifting on the wooden deadlift platform with Elefas bumper plates at Burn & Blast Gym.',
     isReal: true
   },
@@ -157,34 +159,35 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Main Workout Hall & USI Boxing Bag',
     category: 'interior',
     categoryLabel: 'Gym Interior',
-    imageUrl: '/src/assets/images/real/gym_real_1.jpg',
-    caption: 'Long training aisle featuring USI Universal punch bag, overhead geometric lighting, and "CONSISTENCY" pillar.',
+    imageUrl: '/images/gym_hall_main.jpeg',
+    caption: 'Long training aisle featuring USI Universal punch bag, overhead geometric lighting, and "FOCUS" pillar.',
+    isReal: true
+  },
+  {
+    id: 'gal-real-community',
+    title: 'Burn & Blast Gym Community Celebration',
+    category: 'lifestyle',
+    categoryLabel: 'Gym Community',
+    imageUrl: '/images/gym_community.jpeg',
+    caption: 'Members, trainers, and family gathered inside Burn & Blast Gym for celebration and motivation.',
     isReal: true
   },
   {
     id: 'gal-real-equipment',
-    title: 'Resistance Machine Row & Motivational Pillars',
+    title: 'Consistency Pillar & Training Hall',
     category: 'strength',
-    categoryLabel: 'Strength Equipment',
-    imageUrl: '/src/assets/images/real/gym_real_4.jpg',
-    caption: 'Comprehensive resistance machines line with "FOCUS" and "PATIENCE" architectural pillars.',
+    categoryLabel: 'Strength Zone',
+    imageUrl: '/images/gym_hall_consistency.jpeg',
+    caption: 'Comprehensive workout hall showing preacher curl bench, resistance machines, and "CONSISTENCY" pillar.',
     isReal: true
   },
   {
-    id: 'gal-5',
+    id: 'gal-cardio',
     title: 'Cardio Deck & Endurance Station',
     category: 'cardio',
     categoryLabel: 'Cardio Area',
-    imageUrl: '/src/assets/images/gym_cardio_stretch_1793352856772.jpg',
+    imageUrl: '/images/gym_cardio_stretch_1793352856772.jpg',
     caption: 'Commercial treadmills, rowers, and stretching mats in an atmospheric training room.'
-  },
-  {
-    id: 'gal-6',
-    title: 'Free Weights & Dumbbells Arena',
-    category: 'interior',
-    categoryLabel: 'Dumbbell Zone',
-    imageUrl: '/src/assets/images/about_gym_facility_1793352854903.jpg',
-    caption: 'Complete increment dumbbell rack with flat-to-incline benches on shock-absorbing flooring.'
   }
 ];
 
