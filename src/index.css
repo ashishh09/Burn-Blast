@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-brand-orange: #FF5A1F;
+  --color-brand-orange-dark: #E04810;
+  --color-brand-black: #080808;
+  --color-brand-surface: #151515;
+  --color-brand-surface-elevated: #1F1F1F;
+  --color-brand-border: rgba(255, 255, 255, 0.08);
+  --color-brand-muted: #BDBDBD;
+}
+
+@layer base {
+  body {
+    background-color: #080808;
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A1F;
+}
+
+/* Subtle glow effects */
+.orange-glow {
+  box-shadow: 0 0 35px -5px rgba(255, 90, 31, 0.35);
+}
+
+.orange-glow-sm {
+  box-shadow: 0 0 20px -3px rgba(255, 90, 31, 0.25);
+}
+
+.orange-text-glow {
+  text-shadow: 0 0 25px rgba(255, 90, 31, 0.4);
+}

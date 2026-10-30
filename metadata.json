@@ -1,0 +1,6 @@
+{
+  "name": "Burn & Blast Gym",
+  "description": "Premium fitness gym and strength training center in Chhatrapati Sambhajinagar featuring personal guidance, quality equipment, and expert coaching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
